@@ -19,3 +19,8 @@ To run the optimizer on your own intermediate code:
 Ensure you have Lex and Yacc installed.
 Give execution permission: chmod +x run.sh
 Execute the script: ./run.sh
+
+Technical Details 
+Algorithm : Implemented a single-pass backward liveness analysis.
+Data Structure : Used std::set<string> for the active variable tracking, ensuring O(logn) search/insert complexity.
+Grammar : Defined using BNF (Backus-Naur Form) in Yacc to handle multi-operand assignment statements.
